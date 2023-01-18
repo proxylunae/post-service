@@ -1,0 +1,32 @@
+.myModal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    background: rgba(0, 0, 0, .5);
+}
+
+.myModalContent {
+    padding: 25px;
+    background: rgba(150, 150, 150, .25);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    min-width: 600px;
+}
+
+.myModal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input {
+    color: white;
+}
+
+form > input:nth-child(2) {
+    display: flex;
+    text-overflow: ellipsis;
+}

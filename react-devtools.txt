@@ -1,0 +1,8 @@
+If you install react-devtools as a project dependency, you may also replace the <script> suggested above
+ with a JavaScript import (import 'react-devtools').
+It is important that this import comes before any other imports in your app (especially before react-dom).
+Make sure to remove the import before deploying to production, as it carries a large DevTools client with it.
+If you use Webpack and have control over its configuration,
+you could alternatively add 'react-devtools' as the first item
+in the entry array of the development-only configuration,
+and then you wouldn’t need to deal either with <script> tags or import statements.
